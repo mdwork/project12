@@ -128,6 +128,7 @@ a:hover                        { text-decoration:none; }
                     height: 55px;
                     color: #fff;
                     font: 300 25px 'Open Sans', sans-serif;
+                    border: none;
 
                     background: #0099ff; /* Old browsers */
                     background: -moz-linear-gradient(top,  #0099ff 0%, #0066cd 100%); /* FF3.6+ */
@@ -191,14 +192,68 @@ a:hover                        { text-decoration:none; }
                     left: auto;
                     right: 0;
                 }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+                .wrap-bottom .text {
+                    float: left;
+                    width: 475px;
+                    margin-top: 90px;
+                }
+                    .wrap-bottom .btn-submit {
+                        margin-top: 40px;
+                    }
+    .box-benefits {
+        width: 940px;
+        margin: 0 auto;
+        padding: 85px 0 25px;
+    }
+        .list-benefits {
+            overflow: hidden;
+            margin-bottom: 115px;
+            text-align: center;
+        }
+            .list-benefits li {
+                display: inline-table;
+                width: 210px;
+                margin-left: 25px;
+            }
+            .list-benefits li:first-child {
+                margin-left: 0;
+            }
+                .list-benefits li strong {
+                    display: block;
+                    font-size: 50px;
+                    font-weight: 300;
+                }
+                .list-benefits li span {
+                    display: block;
+                    font-size: 14px;
+                }
+        .size-advertising {
+            float: left;
+            position: relative;
+            width: 325px;
+            height: 305px;
+            text-align: center;
 
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+            -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+            box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+        }
+            .size-advertising header {
+                margin-top: 30px;
+                font-size: 100px;
+                color: #ccc;
+                line-height: 1;
+            }
+            .size-advertising span {
+                font-size: 25px;
+                color: #999;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.footer {
+    padding-bottom: 100px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
