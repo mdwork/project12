@@ -233,6 +233,7 @@ a:hover                        { text-decoration:none; }
             position: relative;
             width: 325px;
             height: 305px;
+            margin-left: 6px;
             text-align: center;
 
             -webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.5);
@@ -500,6 +501,64 @@ a:hover                        { text-decoration:none; }
             width: 165px;
             font-size: 18px;
         }
+    .box-reviews {
+        padding: 55px 0 75px;
+    }
+        .wrap-comment {
+            overflow: hidden;
+            width: 940px;
+            margin: 0 auto;
+        }
+        .comment-box {
+            float: left;
+            width: 48%;
+            text-align: center;
+        }
+            .comment-box img {
+                margin-bottom: 10px;
+            }
+            .comment-box hgroup {
+                margin-bottom: 35px;
+            }
+                .comment-box header {
+                    color: #33ccff;
+                    font-size: 25px;
+                    line-height: 1.1;
+                }
+                .comment-box h2 {
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #999;
+                    line-height: 1.1;
+                }
+            .comment-box .text {
+                position: relative;
+            }
+            .comment-box .text:before,
+            .comment-box .text:after {
+                content: '"';
+                display: block;
+                position: absolute;
+                top: -50px;
+                font-size: 80px;
+                font-weight: bold;
+                color: #33ccff;;
+            }
+            .comment-box .text:before {
+                left: -4px;
+            }
+            .comment-box .text:after {
+                right: -10px;
+            }
+                .comment-box p {
+                    padding: 0 20px;
+                    font-size: 18px;
+                    color: #999;
+                    line-height: 1.2;
+                }
+.bg-grey {
+    background: #F7F7F7;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
 /*----------------------------------------------------------------------------------*/
