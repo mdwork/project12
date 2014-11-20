@@ -5,6 +5,69 @@
     <title>Реклама в транспорте</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <style type="text/css">
+        /* Set a size for our map container, the Google Map will take up 100% of this container */
+        #map {
+            width: 100%;
+            height: 478px;
+        }
+    </style>
+
+    <!--
+        You need to include this script on any page that has a Google Map.
+        When using Google Maps on your own site you MUST signup for your own API key at:
+            https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+        After your sign up replace the key in the URL below or paste in the new script tag that Google provides.
+    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map_canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(54.7159700,20.5588103),
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            setMarkers(map, places);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        function setMarkers(map, locations) {
+            //Определяем область показа маркеров
+            var latlngbounds = new google.maps.LatLngBounds();
+
+            var image = new google.maps.MarkerImage( 'images/footer/mark.png',
+                    new google.maps.Size(56,80), // размеры иконок
+                    new google.maps.Point(0,0),
+                    new google.maps.Point(7,36)
+            );
+
+            for (var i = 0; i < places.length; i++) {
+                var myLatLng = new google.maps.LatLng(locations[i][1], locations[i][2]);
+                //Добавляем координаты маркера в область
+                latlngbounds.extend(myLatLng);
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image,
+                    title: locations[i][0]
+                });
+            }
+        }
+        var places = [
+            ['Московский проспект, 153',54.7101700,20.5348103]
+        ];
+    </script>
 </head>
 
 <body>
@@ -65,10 +128,10 @@
                         <img class="img-bus" src="images/content/bus.png" alt="Man">
 
                         <div class="box-text">
-                            <h2 class="header-section">Страх бизнесмена</h2>
-                            <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
-                                захватывают рынок вы теряете клиентов<br>
-                                Мы знаем, как это больно…
+                            <h2 class="header-section">Решение есть!</h2>
+                            <p>От обилия информации краткосрочный контакт с рекламой забывается.
+                                Мы предлагаем рекламу на подголовниках в маршрутном такси.
+                                Минимум 10-и минутный прямой визуальный контакт с вашим рекламным предложением.
                             </p>
                             <input class="btn-submit" type="submit" value="Заказать сейчас">
                         </div>
@@ -107,10 +170,9 @@
 
             <div class="content">
                 <div class="box-text">
-                    <h2 class="header-section">Страх бизнесмена</h2>
-                    <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
-                        захватывают рынок вы теряете клиентов<br>
-                        Мы знаем, как это больно…
+                    <h2 class="header-section">Целевая аудитория</h2>
+                    <p>По последни подсчетам аналитических агентств,
+                        в общественном транспорте доля активных платежеспособных потребители составляет 85%.
                     </p>
 
                     <div class="wrap-input">
@@ -408,8 +470,8 @@
     </main>
 
     <footer class="footer">
-        <div id="map">
-            <img src="images/footer/map.jpg" alt="map" />
+        <div class="wrap-map">
+            <div id="map"></div>
         </div>
 
         <div class="wrap-contacts">
@@ -427,6 +489,15 @@
             </dl>
 
             <input class="btn-submit" type="submit" value="Заказать звонок">
+        </div>
+
+        <div class="box-text foot-right-block">
+            <h3 class="header-section">О нас!</h3>
+
+            <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
+                захватывают рынок вы теряете клиентов<br>
+                Мы знаем, как это больно…
+            </p>
         </div>
     </footer><!--end FOOTER-->
 
