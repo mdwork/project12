@@ -5,6 +5,8 @@
     <title>Реклама в транспорте</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <meta name="viewport" content="width=1024, initial-scale=1, user-scalable=yes">
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 
     <style type="text/css">
@@ -26,8 +28,8 @@
         function initialize() {
             var mapCanvas = document.getElementById('map_canvas');
             var mapOptions = {
-                center: new google.maps.LatLng(54.7159700,20.5588103),
-                zoom: 12,
+                center: new google.maps.LatLng(51.6749903,39.2063365),
+                zoom: 17,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             }
 
@@ -49,7 +51,7 @@
             var image = new google.maps.MarkerImage( 'images/footer/mark.png',
                     new google.maps.Size(56,80), // размеры иконок
                     new google.maps.Point(0,0),
-                    new google.maps.Point(7,36)
+                    new google.maps.Point(8,36)
             );
 
             for (var i = 0; i < places.length; i++) {
@@ -65,7 +67,7 @@
             }
         }
         var places = [
-            ['Московский проспект, 153',54.7101700,20.5348103]
+            ['Московский проспект, 153',51.6753903,39.2088665]
         ];
     </script>
 </head>
@@ -194,7 +196,7 @@
                             </span>
 
                             <span class="wrap-foto">
-                                <img src="images/slider1.png" alt="jQuery UI logo" />
+                                <img src="images/Fiat.jpg" alt="jQuery UI logo" />
                             </span>
 
                             <span class="name-auto">Fiat</span>
@@ -208,11 +210,11 @@
 
                             <span class="wrap-foto">
                                 <span>
-                                    <img src="images/content/bus2.png" alt="jQuery UI logo" />
+                                    <img src="images/PAZ.jpg" alt="jQuery UI logo" />
                                 </span>
                             </span>
 
-                            <span class="name-auto">Fiat</span>
+                            <span class="name-auto">PAZ</span>
                         </div>
 
                         <div id="slide03" class="slide">
@@ -222,10 +224,10 @@
                             </span>
 
                             <span class="wrap-foto">
-                                <img src="images/slider1.png" alt="jQuery UI logo" />
+                                <img src="images/Volvo.jpg" alt="jQuery UI logo" />
                             </span>
 
-                            <span class="name-auto">Fiat</span>
+                            <span class="name-auto">Volvo</span>
                         </div>
                     </div>
                     <a href="#" id="ui-carousel-next"><span>next</span></a>
@@ -270,7 +272,7 @@
                         <p>Рекламу в транспорте я никогда не воспринимал в серьез. Но взвесив количество просмотров,
                             длительность контакта с моей рекламой и стоимость, я решил попробовать.
                             Выбрав подходящие мне маршруты, разместил на два месяца рекламу о моем продукте (у меня
-                            информационный и обучающий портал: Портал Успеха #1™ <a href="#">www.portaluspeha.com</a>).
+                            информационный и обучающий портал: Портал Успеха #1™ <a href="#">www.portaluspeha.com</a> ).
                             Рекламу поставили на бесплатный продукт, который запускает воронку продаж.
                             Дизайн подготовил штатный дизайнер РИА МИР.<br>
                             В результате конверсия и узнаваемость моего ресурса повысилась на 30%, и это открывает для

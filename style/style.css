@@ -478,7 +478,6 @@ a:hover                        { text-decoration:none; }
                         }
                 .comment-box .text {
                     position: relative;
-                    text-align: justify;
                 }
             .comment-box .text:before,
             .comment-box .text:after {
@@ -496,12 +495,17 @@ a:hover                        { text-decoration:none; }
             .comment-box .text:after {
                 right: -10px;
             }
-            .comment-box p {
-                padding: 0 20px;
-                font-size: 18px;
-                color: #999;
-                line-height: 1.2;
-            }
+                .comment-box p {
+                    padding: 0 20px;
+                    font-size: 18px;
+                    color: #999;
+                    line-height: 1.2;
+                    text-align: justify;
+                }
+                    .comment-box p a {
+                        font-size: 16px;
+                        color: #868585;
+                    }
 .bg-grey {
     background: #F7F7F7;
 }
