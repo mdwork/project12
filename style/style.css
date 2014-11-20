@@ -564,6 +564,16 @@ a:hover                        { text-decoration:none; }
         .name-auto {
             margin-top: 15px;
         }
+    .slide .wrap-foto {
+        display: inline-block;
+    }
+        .slide .wrap-foto span {
+            display: table-cell;
+            height: 310px;
+            vertical-align: middle;
+        }
+        .slide .wrap-foto img {
+        }
 #pages {
     width: 150px;
     margin: 0 auto;
