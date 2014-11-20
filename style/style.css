@@ -343,11 +343,106 @@ a:hover                        { text-decoration:none; }
                 }
     .box-questions {
         width: 940px;
+        min-height: 646px;
         margin: 0 auto;
-        padding: 65px 0 75px;
+        padding-top: 65px;
     }
         .box-questions .header-section {
+            margin-bottom: 55px;
             text-align: center;
+        }
+        .list-questions {
+            position: absolute;
+            margin: 55px 0 75px;
+        }
+            .list-questions li {
+                width: 335px;
+                padding: 25px 20px;
+            }
+                .list-questions .question {
+                    display: block;
+                    margin-bottom: 5px;
+                    color: #33ccff;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                .list-questions .sub-question {
+                    color: #999;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+            .list-questions .active {
+                background: #33CCFF;
+
+                -webkit-border-top-left-radius: 10px;
+                -webkit-border-bottom-left-radius: 10px;
+                -moz-border-radius-topleft: 10px;
+                -moz-border-radius-bottomleft: 10px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+                .list-questions .active .question {
+                    color: #fff;
+                }
+                .list-questions .active .sub-question {
+                    color: #fff;
+                }
+        .box-answer {
+            position: relative;
+            float: left;
+            width: 626px;
+            height: 418px;
+            margin: 0 0 105px 375px;
+            background: url("../images/content/wrap_tv_top.png") no-repeat;
+        }
+        .box-answer:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -31px;
+            left: -70px;
+            width: 767px;
+            height: 31px;
+            background: url("../images/content/wrap_tv_bottom.png") no-repeat;
+        }
+            .box-answer .text {
+                float: left;
+                width: 280px;
+                margin: 55px 0 0 55px;
+                font-size: 16px;
+                color: #666;
+            }
+                .box-answer .text p {
+                    margin-bottom: 20px;
+                    line-height: 1.2;
+                }
+            .box-answer img {
+                float: right;
+                margin: 70px 35px 0 0;
+            }
+    .box-history {
+        position: relative;
+        width: 940px;
+        margin: 0 auto;
+        padding: 150px 0 80px;
+    }
+        .box-history .box-text {
+            width: 580px;
+        }
+            .box-history .box-text .header-section {
+                line-height: 1.2;
+            }
+            .box-history .box-text p {
+                margin-bottom: 25px;
+            }
+            .box-history .btn-callback {
+                margin-left: 25px;
+            }
+        .box-history img {
+            position: absolute;
+            bottom: 0;
+            right: -50px;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
