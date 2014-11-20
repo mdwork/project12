@@ -168,17 +168,17 @@ a:hover                        { text-decoration:none; }
                     left: 0;
                     top: 0;
                 }
-                .wrap-top .text {
+                .wrap-top .box-text {
                     float: right;
                     width: 520px;
                     margin-top: 90px;
                 }
-                    .box-fear .text h2 {
+                    .header-section {
                         margin-bottom: 20px;
                         font-size: 50px;
                         font-weight: 300;
                     }
-                    .box-fear .text p {
+                    .box-text p {
                         font-size: 20px;
                         line-height: 1.2;
                     }
@@ -192,7 +192,7 @@ a:hover                        { text-decoration:none; }
                     left: auto;
                     right: 0;
                 }
-                .wrap-bottom .text {
+                .wrap-bottom .box-text {
                     float: left;
                     width: 475px;
                     margin-top: 90px;
@@ -201,6 +201,7 @@ a:hover                        { text-decoration:none; }
                         margin-top: 40px;
                     }
     .box-benefits {
+        overflow: hidden;
         width: 940px;
         margin: 0 auto;
         padding: 85px 0 25px;
@@ -248,11 +249,203 @@ a:hover                        { text-decoration:none; }
                 font-size: 25px;
                 color: #999;
             }
+        .box-benefits .content .box-text {
+            float: right;
+            width: 482px;
+        }
+            .wrap-input {
+                margin-top: 40px;
+            }
+                .btn-callback {
+                    width: 233px;
+                    height: 55px;
+                    margin-left: 5px;
+                    font-size: 25px;
+                    color: #ccc;
+                    background: transparent;
+                    border: 2px solid #F2F0F0;
+                    cursor: pointer;
+                }
+    .box-slider {
+        padding: 45px 0 15px;
+        background: #F7F7F7;
+    }
+    .box-services {
+        width: 940px;
+        margin: 0 auto;
+    }
+        .list-services {
+            overflow: hidden;
+            margin: 30px 0 55px;
+        }
+            .box-services li {
+                float: left;
+                width: 160px;
+                margin-left: 20px;
+                text-align: center;
+            }
+
+                .box-services li .wrap-icon {
+                    display: table;
+                    width: 110px;
+                    height: 110px;
+                    margin: 0 auto 15px;
+                    border: 1px solid #DFDEDE;
+
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    border-radius: 20px;
+                }
+                    .box-services li .wrap-icon span {
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                .box-services li .description {
+                    font-size: 17px;
+                    color: #333;
+                }
+    .box-bonuses {
+        padding: 70px 0;
+        text-align: center;
+        background: #F7F7F7;
+    }
+        .box-bonuses header {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+            .box-bonuses header span {
+                color: #00ccff;
+            }
+        .list-bonuses {
+            overflow: hidden;
+            width: 940px;
+            margin: 0 auto 35px;
+        }
+            .list-bonuses li {
+                float: left;
+                width: 220px;
+                margin-left: 10px;
+                text-align: center;
+                line-height: 1.2;
+            }
+            .list-bonuses li:first-child {
+                margin-left: 0;
+            }
+                .list-bonuses li strong {
+                    display: block;
+                    color: #ccc;
+                    font-size: 100px;
+                    font-weight: 300;
+                }
+                .list-bonuses li span {
+                    font-size: 20px;
+                    color: #999;
+                }
+    .box-questions {
+        width: 940px;
+        margin: 0 auto;
+        padding: 65px 0 75px;
+    }
+        .box-questions .header-section {
+            text-align: center;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .footer {
     padding-bottom: 100px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------RESPONSIVE-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#container {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#carousel {
+    width: 780px;
+    margin: 0 auto;
+}
+
+#ui-carousel-next, #ui-carousel-prev {
+    width: 60px;
+    height: 475px;
+    background: url(../images/arrow-left.png) center center no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+#ui-carousel-next {
+    right: 0;
+    background-image: url(../images/arrow-right.png);
+}
+
+#ui-carousel-prev {
+    left: 0;
+}
+#ui-carousel-next span,
+#ui-carousel-prev span {
+    display: none;
+}
+
+.slide {
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+    .slide .top-text,
+    .name-auto {
+        display: block;
+    }
+    .slide .top-text {
+        margin-bottom: 25px;
+    }
+        .slide .top-text strong {
+            display: block;
+            font-size: 50px;
+            font-weight: 300;
+            color: #999;
+            line-height: 1;
+        }
+        .slide .top-text span,
+        .name-auto {
+            font-size: 25px;
+            color: #999;
+        }
+        .name-auto {
+            margin-top: 15px;
+        }
+#pages {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.ui-carousel {
+    height: 100px;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: relative; /*for ie7 to work e.g in html carousels*/
+    width: 300px
+}
+
+.ui-carousel > .wrapper {
+    margin: 0;
+    padding: 0;
+    width: 9999px;
+}
+
+.ui-carousel > .wrapper > * {
+    border: 0;
+    display: block;
+    float: left;
+    height: 100px;
+    overflow: hidden;
+    width: 100px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
