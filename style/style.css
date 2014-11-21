@@ -196,6 +196,7 @@ a:hover                        { text-decoration:none; }
                     float: left;
                     width: 475px;
                     margin-top: 90px;
+                    margin-left: 275px;
                 }
                     .wrap-bottom .btn-submit {
                         margin-top: 40px;
@@ -660,6 +661,9 @@ a:hover                        { text-decoration:none; }
     height: 100px;
     overflow: hidden;
     width: 100px;
+}
+.head {
+    position: absolute;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------RESPONSIVE-----------------------------------*/
