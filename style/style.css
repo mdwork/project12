@@ -49,13 +49,16 @@ a:hover                        { text-decoration:none; }
         .header-top {
             overflow: hidden;
             width: 940px;
-            padding: 3px 0 9px;
+            padding: 3px 0;
             margin: 0 auto;
             color: #e0e1e2;
             font-size: 20px;
         }
             .main-logo {
+                overflow: hidden;
                 float: left;
+                width: 170px;
+                height: 60px;
             }
                 .main-logo a {
                     font-size: 40px;
@@ -63,6 +66,10 @@ a:hover                        { text-decoration:none; }
                     color: #e0e1e2;
                     text-decoration: none;
                 }
+                    .main-logo img {
+                        width: 170px;
+                        height: 60px;
+                    }
             .contact-box {
                 float: right;
                 margin-top: 17px;
@@ -473,32 +480,35 @@ a:hover                        { text-decoration:none; }
                         .comment-box h2 {
                             font-size: 15px;
                             font-weight: 300;
-                            color: #999;
+                            color: #999999;
                             line-height: 1.1;
                         }
                 .comment-box .text {
                     position: relative;
+                    padding-top: 8px;
                 }
             .comment-box .text:before,
             .comment-box .text:after {
                 content: '"';
                 display: block;
                 position: absolute;
-                top: -50px;
+                top: -55px;
                 font-size: 80px;
                 font-weight: bold;
                 color: #33ccff;;
             }
             .comment-box .text:before {
-                left: -4px;
+                left: -2px;
             }
             .comment-box .text:after {
-                right: -10px;
+                right: -5px;
             }
                 .comment-box p {
+                    overflow: auto;
+                    max-height: 340px;
                     padding: 0 20px;
                     font-size: 18px;
-                    color: #999;
+                    color: #999999;
                     line-height: 1.2;
                     text-align: justify;
                 }
@@ -585,7 +595,7 @@ a:hover                        { text-decoration:none; }
 #ui-carousel-next, #ui-carousel-prev {
     width: 60px;
     height: 475px;
-    background: url(../images/arrow-left.png) center center no-repeat;
+    background: url(../images/slider/arrow-left.png) center center no-repeat;
     display: block;
     position: absolute;
     top: 0;
@@ -594,7 +604,7 @@ a:hover                        { text-decoration:none; }
 
 #ui-carousel-next {
     right: 0;
-    background-image: url(../images/arrow-right.png);
+    background-image: url(../images/slider/arrow-right.png);
 }
 
 #ui-carousel-prev {
