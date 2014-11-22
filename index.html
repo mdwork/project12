@@ -4,9 +4,15 @@
     <meta charset="utf-8" />
     <title>Реклама в транспорте</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="http://mymir36.ru/style.css">
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!-- Countdown -->
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <meta name="viewport" content="width=1024, initial-scale=1, user-scalable=yes">
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 
     <style type="text/css">
@@ -73,118 +79,130 @@
 </head>
 
 <body>
-<div class="wrap-header">
-    <div class="wrap-header-top">
-        <header class="header-top">
-            <h1 class="main-logo">
-                <a href="#">
-                    <img src="images/header/logo.png" alt="Мир - рекламное агентство">
-                    Мир - рекламное агентство
-                </a>
-            </h1>
+    <div class="wrap-header">
+        <div class="wrap-header-top">
+            <header class="header-top">
+                <h1 class="main-logo">
+                    <a href="#">
+                        <img src="images/header/logo.png" alt="Мир - рекламное агентство">
+                        Мир - рекламное агентство
+                    </a>
+                </h1>
 
-            <ul class="contact-box">
-                <li>email@mysite.ru</li>
-                <li>044 000 00 00</li>
+                <ul class="contact-box">
+                    <li>email@mysite.ru</li>
+                    <li>044 000 00 00</li>
+                </ul>
+
+                <span class="name-city">Воронеж, Воронежская обл.</span>
+            </header>
+        </div><!--end WRAP-HEADER-TOP-->
+
+        <section class="form-box">
+            <header class="header-site">Реклама в транспорте</header>
+
+            <div class="wrap-form">
+                <span class="description-form">Ваша реклама перед глазами 150000 потенциальних</span>
+                <form class="common-form" action="#" name="common-form">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="text" placeholder="Ваш email">
+                    <input class="btn-submit" type="submit" value="Заказать сейчас">
+                </form>
+
+                <span class="text">Получите клиентов и продажи прямо сейчас!</span>
+            </div><!--end WRAP-FORM-->
+        </section><!--end WRAP-FORM-BOX-->
+    </div><!--end WRAP-HEADER-->
+
+    <main class="content">
+        <section class="box-fear">
+            <ul>
+                <li class="wrap-top">
+                    <div class="content1">
+                        <img class="img-man" src="images/content/man.jpg" alt="Man">
+
+                        <div class="box-text">
+                            <h2 class="header-section">Страх бизнесмена</h2>
+                            <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
+                                захватывают рынок вы теряете клиентов<br>
+                                Мы знаем, как это больно…
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="wrap-bottom">
+                    <div class="head">
+                        <div class="content">
+                            <div class="panel_avto_and_form">
+                                <div class="sale_text">На первое размещение скидка от <span>15%</span></div>
+
+                                <div class="avt_back">
+                                    <div class="door_avto"></div>
+                                    <div class="circle_1"></div>
+                                    <div class="circle_2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="box-text">
+                            <h2 class="header-section">Решение есть!</h2>
+                            <p>От обилия информации краткосрочный контакт с рекламой забывается.
+                                Мы предлагаем рекламу на подголовниках в маршрутном такси.
+                                Минимум 10-и минутный прямой визуальный контакт с вашим рекламным предложением.
+                            </p>
+                            <input class="btn-submit" type="submit" value="Заказать сейчас">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section><!--end BOX-FEAR-->
+
+        <section class="box-benefits">
+            <ul class="list-benefits">
+                <li>
+                    <strong>27 000</strong>
+                    <span>потенциальных клиентов в месяц, при минимальном заказе</span>
+                </li>
+
+                <li>
+                    <strong>16-18</strong>
+                    <span>часов в сутки вашу рекламу видят потенциальные клиенты</span>
+                </li>
+
+                <li>
+                    <strong>10-70</strong>
+                    <span>минут прямого контакта в течение всей поездки</span>
+                </li>
+
+                <li>
+                    <strong>2+</strong>
+                    <span>повторного визуального контакта пассажира с объявлением в день</span>
+                </li>
             </ul>
 
-            <span class="name-city">Воронеж, Воронежская обл.</span>
-        </header>
-    </div><!--end WRAP-HEADER-TOP-->
+            <div class="size-advertising">
+                <header>A4</header>
+                <span>по цене A6</span>
+            </div>
 
-    <section class="form-box">
-        <header class="header-site">Реклама в транспорте</header>
-
-        <div class="wrap-form">
-            <span class="description-form">Ваша реклама перед глазами 150000 потенциальних</span>
-            <form class="common-form" action="#" name="common-form">
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Ваш телефон">
-                <input type="text" placeholder="Ваш email">
-                <input class="btn-submit" type="submit" value="Заказать сейчас">
-            </form>
-
-            <span class="text">Получите клиентов и продажи прямо сейчас!</span>
-        </div><!--end WRAP-FORM-->
-    </section><!--end WRAP-FORM-BOX-->
-</div><!--end WRAP-HEADER-->
-
-<main class="content">
-<section class="box-fear">
-    <ul>
-        <li class="wrap-top">
             <div class="content">
-                <img class="img-man" src="images/content/man.jpg" alt="Man">
-
                 <div class="box-text">
-                    <h2 class="header-section">Страх бизнесмена</h2>
-                    <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
-                        захватывают рынок вы теряете клиентов<br>
-                        Мы знаем, как это больно…
+                    <h2 class="header-section">Целевая аудитория</h2>
+                    <p>По последни подсчетам аналитических агентств,
+                        в общественном транспорте доля активных платежеспособных потребители составляет 85%.
                     </p>
+
+                    <div class="wrap-input">
+                        <input class="btn-submit" type="submit" value="Заказать сейчас">
+                        <input class="btn-callback" type="button" value="Обратный звонок">
+                    </div>
                 </div>
             </div>
-        </li>
-
-        <li class="wrap-bottom">
-            <div class="content">
-                <img class="img-bus" src="images/content/bus.png" alt="Man">
-
-                <div class="box-text">
-                    <h2 class="header-section">Решение есть!</h2>
-                    <p>От обилия информации краткосрочный контакт с рекламой забывается.
-                        Мы предлагаем рекламу на подголовниках в маршрутном такси.
-                        Минимум 10-и минутный прямой визуальный контакт с вашим рекламным предложением.
-                    </p>
-                    <input class="btn-submit" type="submit" value="Заказать сейчас">
-                </div>
-            </div>
-        </li>
-    </ul>
-</section><!--end BOX-FEAR-->
-
-<section class="box-benefits">
-    <ul class="list-benefits">
-        <li>
-            <strong>27 000</strong>
-            <span>потенциальных клиентов в месяц, при минимальном заказе</span>
-        </li>
-
-        <li>
-            <strong>16-18</strong>
-            <span>часов в сутки вашу рекламу видят потенциальные клиенты</span>
-        </li>
-
-        <li>
-            <strong>10-70</strong>
-            <span>минут прямого контакта в течение всей поездки</span>
-        </li>
-
-        <li>
-            <strong>2+</strong>
-            <span>повторного визуального контакта пассажира с объявлением в день</span>
-        </li>
-    </ul>
-
-    <div class="size-advertising">
-        <header>A4</header>
-        <span>по цене A6</span>
-    </div>
-
-    <div class="content">
-        <div class="box-text">
-            <h2 class="header-section">Целевая аудитория</h2>
-            <p>По последни подсчетам аналитических агентств,
-                в общественном транспорте доля активных платежеспособных потребители составляет 85%.
-            </p>
-
-            <div class="wrap-input">
-                <input class="btn-submit" type="submit" value="Заказать сейчас">
-                <input class="btn-callback" type="button" value="Обратный звонок">
-            </div>
-        </div>
-    </div>
-</section><!--end BOX-BENEFITS-->
+        </section><!--end BOX-BENEFITS-->
 
         <section class="box-slider">
             <div id="content">
@@ -219,14 +237,14 @@
                         </div>
 
                         <div id="slide03" class="slide">
-                                    <span class="top-text">
-                                        <strong>13 000 - 18 000</strong>
-                                        <span>человек/месяц</span>
-                                    </span>
+                            <span class="top-text">
+                                <strong>13 000 - 18 000</strong>
+                                <span>человек/месяц</span>
+                            </span>
 
-                                    <span class="wrap-foto">
-                                        <img src="images/slider/Volvo.png" alt="jQuery UI logo" />
-                                    </span>
+                            <span class="wrap-foto">
+                                <img src="images/slider/Volvo.png" alt="jQuery UI logo" />
+                            </span>
 
                             <span class="name-auto">Volvo</span>
                         </div>
@@ -297,217 +315,216 @@
                         </span>
                     </span>
 
-            <span class="description">Арендная плата транспортного средства</span>
-        </li>
+                    <span class="description">Арендная плата транспортного средства</span>
+                </li>
 
-        <li>
+                <li>
                     <span class="wrap-icon">
                         <span>
                             <img src="images/content/2.png" alt="">
                         </span>
                     </span>
 
-            <span class="description">Монтаж/демонтаж транспортного средства</span>
-        </li>
+                    <span class="description">Монтаж/демонтаж транспортного средства</span>
+                </li>
 
-        <li>
+                <li>
                     <span class="wrap-icon">
                         <span>
                             <img src="images/content/3.png" alt="">
                         </span>
                     </span>
 
-            <span class="description">Гарантированное обслуживание в процессе срока размещения</span>
-        </li>
+                    <span class="description">Гарантированное обслуживание в процессе срока размещения</span>
+                </li>
 
-        <li>
+                <li>
                     <span class="wrap-icon">
                         <span>
                             <img src="images/content/4.png" alt="">
                         </span>
                     </span>
 
-            <span class="description">Печать объявлений для размещения в транспорте</span>
-        </li>
+                    <span class="description">Печать объявлений для размещения в транспорте</span>
+                </li>
 
-        <li>
+                <li>
                     <span class="wrap-icon">
                         <span>
                             <img src="images/content/5.png" alt="">
                         </span>
                     </span>
 
-            <span class="description">Фотоотчет</span>
-        </li>
-    </ul>
-</section><!--end BOX-SERVICE-->
+                    <span class="description">Фотоотчет</span>
+                </li>
+            </ul>
+        </section><!--end BOX-SERVICE-->
 
-<section class="box-bonuses">
-    <header>Получите <span>бонусы</span> прямо <span>сейчас</span></header>
+        <section class="box-bonuses">
+            <header>Получите <span>бонусы</span> прямо <span>сейчас</span></header>
 
-    <ul class="list-bonuses">
-        <li>
-            <strong>-10%</strong>
-            <span>скижка при первом размещении</span>
-        </li>
+            <ul class="list-bonuses">
+                <li>
+                    <strong>-10%</strong>
+                    <span>скижка при первом размещении</span>
+                </li>
 
-        <li>
-            <strong>10</strong>
-            <span>каждая 10-я машина в подарок</span>
-        </li>
+                <li>
+                    <strong>10</strong>
+                    <span>каждая 10-я машина в подарок</span>
+                </li>
 
-        <li>
-            <strong>20%</strong>
-            <span>от 3х месяцев размещения 20% скидка</span>
-        </li>
+                <li>
+                    <strong>20%</strong>
+                    <span>от 3х месяцев размещения 20% скидка</span>
+                </li>
 
-        <li>
-            <strong>А5</strong>
-            <span>При размещении форматом А5, пятая неделя в подарок</span>
-        </li>
-    </ul>
+                <li>
+                    <strong>А5</strong>
+                    <span>При размещении форматом А5, пятая неделя в подарок</span>
+                </li>
+            </ul>
 
-    <input class="btn-submit" type="submit" value="Заказать">
-</section><!--end BOX-BONUSES-->
+            <input class="btn-submit" type="submit" value="Заказать">
+        </section><!--end BOX-BONUSES-->
 
-<section class="box-questions">
-    <h2 class="header-section">Часто задаваемые вопросы:</h2>
+        <section class="box-questions">
+            <h2 class="header-section">Часто задаваемые вопросы:</h2>
 
-    <ul class="list-questions">
-        <li class="active">
-            <span class="question">Пассажиры маршрутного такси:</span>
-            <span class="sub-question">Что мы знаем о них?</span>
-        </li>
+            <ul class="list-questions">
+                <li class="active">
+                    <span class="question">Пассажиры маршрутного такси:</span>
+                    <span class="sub-question">Что мы знаем о них?</span>
+                </li>
 
-        <li>
-            <span class="question">Пассажиры маршрутного такси:</span>
-            <span class="sub-question">Что мы знаем о них?</span>
-        </li>
+                <li>
+                    <span class="question">Пассажиры маршрутного такси:</span>
+                    <span class="sub-question">Что мы знаем о них?</span>
+                </li>
 
-        <li>
-            <span class="question">Пассажиры маршрутного такси:</span>
-            <span class="sub-question">Что мы знаем о них?</span>
-        </li>
-    </ul>
+                <li>
+                    <span class="question">Пассажиры маршрутного такси:</span>
+                    <span class="sub-question">Что мы знаем о них?</span>
+                </li>
+            </ul>
 
-    <div class="box-answer">
-        <div class="text">
-            <p>Во-первых, пассажиры платят "за проезд". Все входящие платят!</p>
-            <p>Во-вторых, специалисты считают: замкнутое пространство делает пассажиров более внимательными
-                к визуальной информации (поэтому-то многие и хотят ехать у окошка).</p>
-            <p>В-третьих, ехать им как минимум одну остановку.<br>
-                Мало места, но много времени, и они волей-неволей находятся в состоянии ожидания (своей
-                остановки, зеленого светофора, смены радиоволны, улыбки</p>
-        </div>
-        <img src="images/content/bus2.png" alt="foto">
-    </div>
-</section><!--end BOX-QUESTIONS-->
-
-<section class="box-reviews bg-grey">
-    <div class="wrap-comment">
-        <div class="comment-box">
-            <img src="images/content/comment_foto1.png" alt="foto">
-            <hgroup>
-                <header>Анна Васильева</header>
-                <h2>директор сети супермаркетов</h2>
-            </hgroup>
-
-            <div class="text">
-                <p>Первый раз разместились, в июле месяце. Разместились только на месяц, хотя менеджер сказал,
-                    что срок минимальный 2 месяца. Сторговались!) Выделили отдельный номер, разместили в макет
-                    куаркодом. Стали ждать! Первая неделя звонков почти не было. Денег на рекламу потратили
-                    много, расстроился, что опять надувательство: наобещали и тишина! Звонки стали приходить
-                    на 2-ую неделю, были редкие, 2-3 в день. Но стало спокойней, 10 клиентов, нам уже рекламу
-                    окупали. Народ звонил прям из автобуса, ехали и звонили. И я не ожидал! Дней через 25 стали
-                    звонившие делать заказы, и звонков стало больше. Продлились на 2-ой месяц. После на 7-ую
-                    неделю окупили все 2 месяца. И народ еще звонит и покупает, заказывает чистку. В сентябре
-                    рекламу из транспорта сняли, хотели сэкономить, разницу ощутил через неделю. Звонки от
-                    клиентов последовали не сразу. Надо правильно выбирать маршрут и "примелькаться" перед
-                    глазами людей. Мой стартовый скепсис пропал с появлением клиентов. Благодарен за гибкие
-                    условия и индивидуальный подход. Удачи!</p>
+            <div class="box-answer">
+                <div class="text">
+                    <p>Во-первых, пассажиры платят "за проезд". Все входящие платят!</p>
+                    <p>Во-вторых, специалисты считают: замкнутое пространство делает пассажиров более внимательными
+                        к визуальной информации (поэтому-то многие и хотят ехать у окошка).</p>
+                    <p>В-третьих, ехать им как минимум одну остановку.<br>
+                        Мало места, но много времени, и они волей-неволей находятся в состоянии ожидания (своей
+                        остановки, зеленого светофора, смены радиоволны, улыбки</p>
+                </div>
+                <img src="images/content/bus2.png" alt="foto">
             </div>
-        </div>
+        </section><!--end BOX-QUESTIONS-->
 
-        <div class="comment-box float-r">
-            <img src="images/content/comment_foto1.png" alt="foto">
-            <hgroup>
-                <header>Анна Васильева</header>
-                <h2>директор сети супермаркетов</h2>
-            </hgroup>
+        <section class="box-reviews bg-grey">
+            <div class="wrap-comment">
+                <div class="comment-box">
+                    <img src="images/content/comment_foto1.png" alt="foto">
+                    <hgroup>
+                        <header>Анна Васильева</header>
+                        <h2>директор сети супермаркетов</h2>
+                    </hgroup>
 
-            <div class="text">
-                <p>Искал рекламную площадку под свой проект, чтобы максимально подходила под мою целевую
-                    аудиторию. Просмотрел все варианты размещения в печатных изданиях и в интернете. При общении
-                    с менеджерами этих компаний, понял, что Воронежцы не достаточно уделяют внимание этой
-                    рекламе. Вечером ехал домой на автобусе, и в один момент осознал, что просто читаю то, что
-                    написано на сидении. Так как ехать мне было 40 минут, то за это время я изучил весь лист А4
-                    и даже успел несколько раз перечитать, что было непонятно. А так как моя ЦА в основном
-                    перемещается на таком транспорте, то понял, что для меня реклама в автобусе лучший вариант!
-                    Поэтому обратился в РИА "МИР" и заказал у них рекламу. По результатам более чем доволен.
-                    Поток людей увеличился в 2,3 раза, поэтому буду продолжать работать с ними!</p>
+                    <div class="text">
+                        <p>Первый раз разместились, в июле месяце. Разместились только на месяц, хотя менеджер сказал,
+                            что срок минимальный 2 месяца. Сторговались!) Выделили отдельный номер, разместили в макет
+                            куаркодом. Стали ждать! Первая неделя звонков почти не было. Денег на рекламу потратили
+                            много, расстроился, что опять надувательство: наобещали и тишина! Звонки стали приходить
+                            на 2-ую неделю, были редкие, 2-3 в день. Но стало спокойней, 10 клиентов, нам уже рекламу
+                            окупали. Народ звонил прям из автобуса, ехали и звонили. И я не ожидал! Дней через 25 стали
+                            звонившие делать заказы, и звонков стало больше. Продлились на 2-ой месяц. После на 7-ую
+                            неделю окупили все 2 месяца. И народ еще звонит и покупает, заказывает чистку. В сентябре
+                            рекламу из транспорта сняли, хотели сэкономить, разницу ощутил через неделю. Звонки от
+                            клиентов последовали не сразу. Надо правильно выбирать маршрут и "примелькаться" перед
+                            глазами людей. Мой стартовый скепсис пропал с появлением клиентов. Благодарен за гибкие
+                            условия и индивидуальный подход. Удачи!</p>
+                    </div>
+                </div>
+
+                <div class="comment-box float-r">
+                    <img src="images/content/comment_foto1.png" alt="foto">
+                    <hgroup>
+                        <header>Анна Васильева</header>
+                        <h2>директор сети супермаркетов</h2>
+                    </hgroup>
+
+                    <div class="text">
+                        <p>Искал рекламную площадку под свой проект, чтобы максимально подходила под мою целевую
+                            аудиторию. Просмотрел все варианты размещения в печатных изданиях и в интернете. При общении
+                            с менеджерами этих компаний, понял, что Воронежцы не достаточно уделяют внимание этой
+                            рекламе. Вечером ехал домой на автобусе, и в один момент осознал, что просто читаю то, что
+                            написано на сидении. Так как ехать мне было 40 минут, то за это время я изучил весь лист А4
+                            и даже успел несколько раз перечитать, что было непонятно. А так как моя ЦА в основном
+                            перемещается на таком транспорте, то понял, что для меня реклама в автобусе лучший вариант!
+                            Поэтому обратился в РИА "МИР" и заказал у них рекламу. По результатам более чем доволен.
+                            Поток людей увеличился в 2,3 раза, поэтому буду продолжать работать с ними!</p>
+                    </div>
+                </div>
             </div>
+        </section><!--end BOX-REVIEWS-->
+
+        <section class="box-history">
+            <div class="box-text">
+                <h2 class="header-section">История успешного маркетингового хода</h2>
+                <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
+                    захватывают рынок вы теряете клиентов<br>
+                    Мы знаем, как это больно…
+                </p>
+                <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
+                    захватывают рынок вы теряете клиентов<br>
+                    Мы знаем, как это больно…
+                </p>
+
+                <div class="wrap-input">
+                    <input class="btn-submit" type="submit" value="Заказать сейчас">
+                    <input class="btn-callback" type="button" value="Обратный звонок">
+                </div>
+            </div>
+
+            <img src="images/content/girl.jpg" alt="foto">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap-map">
+            <div id="map"></div>
         </div>
-    </div>
-</section><!--end BOX-REVIEWS-->
 
-<section class="box-history">
-    <div class="box-text">
-        <h2 class="header-section">История успешного маркетингового хода</h2>
-        <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
-            захватывают рынок вы теряете клиентов<br>
-            Мы знаем, как это больно…
-        </p>
-        <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
-            захватывают рынок вы теряете клиентов<br>
-            Мы знаем, как это больно…
-        </p>
+        <div class="wrap-contacts">
+            <h3>Контакты</h3>
 
-        <div class="wrap-input">
-            <input class="btn-submit" type="submit" value="Заказать сейчас">
-            <input class="btn-callback" type="button" value="Обратный звонок">
+            <dl>
+                <dt>Адрес:</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing</dd>
+
+                <dt>Телефон:</dt>
+                <dd>+123 000 00 00</dd>
+
+                <dt>Email:</dt>
+                <dd>info@mysite.ru</dd>
+            </dl>
+
+            <input class="btn-submit" type="submit" value="Заказать звонок">
         </div>
-    </div>
 
-    <img src="images/content/girl.jpg" alt="foto">
-</section>
-</main>
+        <div class="box-text foot-right-block">
+            <h3 class="header-section">О нас!</h3>
 
-<footer class="footer">
-    <div class="wrap-map">
-        <div id="map"></div>
-    </div>
+            <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
+                захватывают рынок вы теряете клиентов<br>
+                Мы знаем, как это больно…
+            </p>
+        </div>
+    </footer><!--end FOOTER-->
 
-    <div class="wrap-contacts">
-        <h3>Контакты</h3>
-
-        <dl>
-            <dt>Адрес:</dt>
-            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing</dd>
-
-            <dt>Телефон:</dt>
-            <dd>+123 000 00 00</dd>
-
-            <dt>Email:</dt>
-            <dd>info@mysite.ru</dd>
-        </dl>
-
-        <input class="btn-submit" type="submit" value="Заказать звонок">
-    </div>
-
-    <div class="box-text foot-right-block">
-        <h3 class="header-section">О нас!</h3>
-
-        <p>Бизнес, который не приносит результата  — это постоянный страх, что будет дальше. Конкуренты
-            захватывают рынок вы теряете клиентов<br>
-            Мы знаем, как это больно…
-        </p>
-    </div>
-</footer><!--end FOOTER-->
-
-<script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/jquery.ui.core.min.js"></script>
-<script src="js/jquery.ui.widget.min.js"></script>
-<script src="js/jquery.ui.rcarousel.min.js"></script>
-<script src="js/mainJs.js"></script>
+    <script src="js/jquery.ui.core.min.js"></script>
+    <script src="js/jquery.ui.widget.min.js"></script>
+    <script src="js/jquery.ui.rcarousel.min.js"></script>
+    <script src="js/mainJs.js"></script>
 </body>
 </html>

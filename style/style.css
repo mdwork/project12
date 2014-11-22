@@ -166,7 +166,8 @@ a:hover                        { text-decoration:none; }
             position: relative;
             height: 470px;
         }
-            .box-fear .content1 {
+            .box-fear .content1,
+            .box-fear .content {
                 width: 940px;
                 margin: 0 auto;
             }
@@ -215,7 +216,7 @@ a:hover                        { text-decoration:none; }
         overflow: hidden;
         width: 940px;
         margin: 0 auto;
-        padding: 85px 0 25px;
+        padding-top: 85px;
     }
         .list-benefits {
             overflow: hidden;
